@@ -65,6 +65,11 @@ public static class Helpers
             Object.Destroy(child.gameObject);
     }
 
+    public static T GetLastElement<T>(this List<T> list)
+    {
+        return list[^-1];
+    }
+
     /// <summary>
     /// Converts the anchoredPosition of the first RectTransform to the second RectTransform,
     /// taking into consideration offset, anchors and pivot, and returns the new anchoredPosition
